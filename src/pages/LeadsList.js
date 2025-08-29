@@ -4,10 +4,6 @@ import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import { Link } from 'react-router-dom';
-import { ModuleRegistry, ClientSideRowModelModule } from 'ag-grid-community';
-
-// Register required AG Grid modules
-ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 export default function LeadsList() {
   const [rowData, setRowData] = useState([]);
